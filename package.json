@@ -1,0 +1,41 @@
+{
+  "name": "2nd-hyper",
+  "version": "0.0.1",
+  "description": "Second Exchange and Hypercore file services with nostr",
+  "keywords": [
+    "",
+    ""
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": "12"
+  },
+  "typings": "dist/src/hyperspace.d.ts",
+  "scripts": {
+    "start:dev": "nodemon",
+    "clean": "lb-clean dist *.tsbuildinfo .eslintcache",
+    "rebuild": "yarn run clean && yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Saransh Sharma <saransh@muellners.org>",
+  "license": "",
+  "files": [
+    "README.md",
+    "src",
+    "!*/__tests__"
+  ],
+  "dependencies": {
+    "hyperspace": "3.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "hyperspace": "3.19.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
